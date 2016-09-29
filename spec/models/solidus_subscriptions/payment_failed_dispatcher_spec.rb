@@ -18,7 +18,7 @@ RSpec.describe SolidusSubscriptions::PaymentFailedDispatcher do
     end
 
     it 'logs the failure' do
-      expect(dispatcher).to receive(:log_failure).once
+      expect(dispatcher).to receive(:notify).once
       subject
     end
   end
